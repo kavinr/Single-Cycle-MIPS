@@ -1,0 +1,22 @@
+set link_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_WCCOM25 /apps/synopsys/C-2009.06-SP2/libraries/syn/dw02.sldb /apps/synopsys/C-2009.06-SP2/libraries/syn/dw01.sldb }
+set target_library {/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_WCCOM25}
+read_verilog processor.v 
+current_design processor
+link
+check_design
+create_clock clock -name clock -period 5.000000
+set_propagated_clock clock
+set_clock_uncertainty 0.25 clock
+set_propagated_clock clock
+set_dont_touch_network [all_clocks]
+set_max_area 20000
+compile -map_effort medium
+update_timing
+report -cell
+report -net
+report -port
+report_timing
+report_power
+report_area
+write -hierarchy -format verilog -output mips_1cycle.v
+write_sdc mips_1cycle.sdc
