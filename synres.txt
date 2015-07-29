@@ -1,0 +1,1365 @@
+Loading db file '/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_WCCOM25'
+Loading db file '/apps/synopsys/C-2009.06-SP2/libraries/syn/dw02.sldb'
+Loading db file '/apps/synopsys/C-2009.06-SP2/libraries/syn/dw01.sldb'
+Loading db file '/apps/synopsys/SYNTH/libraries/syn/gtech.db'
+Loading db file '/apps/synopsys/SYNTH/libraries/syn/standard.sldb'
+  Loading link library 'tc240c'
+Warning: Function '=' leaked 1 allocations for 16 bytes. (EQN-21)
+  Loading link library 'gtech'
+Loading verilog file '/home/ra/raje9978/ee275/sc_mips/processor.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Opening include file file.f
+Opening include file signext.v
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/ra/raje9978/ee275/sc_mips/processor.v
+Opening include file file.f
+Opening include file signext.v
+Opening include file lshift.v
+Opening include file mux_2x1.v
+Opening include file pc.v
+Opening include file alu.v
+Warning:  pc.v:35: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  pc.v:38: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  pc.v:41: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  pc.v:44: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  pc.v:47: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Opening include file gpr.v
+Opening include file control_unit.v
+Warning:  gpr.v:20: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+
+Inferred memory devices in process
+	in routine pc line 32 in file
+		'pc.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     pc_val_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+Warning:  alu.v:17: unsigned to signed assignment occurs. (VER-318)
+Warning:  alu.v:18: unsigned to signed assignment occurs. (VER-318)
+Warning:  alu.v:40: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 14 in file
+	'alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            19            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine alu line 14 in file
+		'alu.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|       out_reg       | Latch |  32   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Warning:  gpr.v:20: Potential simulation-synthesis mismatch if index exceeds size of array 'gpr'. (ELAB-349)
+Warning:  gpr.v:24: Potential simulation-synthesis mismatch if index exceeds size of array 'gpr'. (ELAB-349)
+Warning:  gpr.v:25: Potential simulation-synthesis mismatch if index exceeds size of array 'gpr'. (ELAB-349)
+
+Inferred memory devices in process
+	in routine gpr line 18 in file
+		'gpr.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       gpr_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|      gpr/24      |   32   |   32    |      5       | N  |
+|      gpr/25      |   32   |   32    |      5       | N  |
+===========================================================
+Presto compilation completed successfully.
+Current design is now '/home/ra/raje9978/ee275/sc_mips/signext.db:signext'
+Loaded 8 designs.
+Current design is 'signext'.
+Current design is 'processor'.
+
+  Linking design 'processor'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  tc240c (library)            /apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_WCCOM25
+  dw02.sldb (library)         /apps/synopsys/C-2009.06-SP2/libraries/syn/dw02.sldb
+  dw01.sldb (library)         /apps/synopsys/C-2009.06-SP2/libraries/syn/dw01.sldb
+
+Error: Width mismatch on port 'ALUSrc' of reference to 'control_unit' in 'processor'. (LINK-3)
+Warning: Unable to resolve reference 'control_unit' in 'processor'. (LINK-5)
+Information: Building the design 'mux_2x1' instantiated from design 'processor' with
+	the parameters "DATA_WIDTH=5". (HDL-193)
+Warning: Cannot find the design 'mux_2x1' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'mux_2x1' in 'processor'. (LINK-5)
+Error: Width mismatch on port 'ALUSrc' of reference to 'control_unit' in 'processor'. (LINK-3)
+Warning: Unable to resolve reference 'control_unit' in 'processor'. (LINK-5)
+Information: Building the design 'mux_2x1' instantiated from design 'processor' with
+	the parameters "DATA_WIDTH=5". (HDL-193)
+Warning: Cannot find the design 'mux_2x1' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'mux_2x1' in 'processor'. (LINK-5)
+Warning: In design 'processor', a pin on submodule 'mux_2x1_u6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ip1[31]' is connected to logic 0. 
+   Pin 'ip1[30]' is connected to logic 0. 
+   Pin 'ip1[29]' is connected to logic 0. 
+   Pin 'ip1[28]' is connected to logic 0. 
+   Pin 'ip1[27]' is connected to logic 0. 
+   Pin 'ip1[26]' is connected to logic 0. 
+   Pin 'ip1[25]' is connected to logic 0. 
+   Pin 'ip1[24]' is connected to logic 0. 
+   Pin 'ip1[23]' is connected to logic 0. 
+   Pin 'ip1[22]' is connected to logic 0. 
+   Pin 'ip1[21]' is connected to logic 0. 
+   Pin 'ip1[20]' is connected to logic 0. 
+   Pin 'ip1[19]' is connected to logic 0. 
+   Pin 'ip1[18]' is connected to logic 0. 
+   Pin 'ip1[17]' is connected to logic 0. 
+   Pin 'ip1[16]' is connected to logic 0. 
+   Pin 'ip1[15]' is connected to logic 0. 
+   Pin 'ip1[14]' is connected to logic 0. 
+   Pin 'ip1[13]' is connected to logic 0. 
+   Pin 'ip1[12]' is connected to logic 0. 
+   Pin 'ip1[11]' is connected to logic 0. 
+   Pin 'ip1[10]' is connected to logic 0. 
+   Pin 'ip1[9]' is connected to logic 0. 
+   Pin 'ip1[8]' is connected to logic 0. 
+   Pin 'ip1[7]' is connected to logic 0. 
+   Pin 'ip1[6]' is connected to logic 0. 
+   Pin 'ip1[5]' is connected to logic 0. 
+Warning: In design 'processor', the same net is connected to more than one pin on submodule 'mux_2x1_u6'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ip1[31]', 'ip1[30]', 'ip1[29]', 'ip1[28]', 'ip1[27]', 'ip1[26]', 'ip1[25]', 'ip1[24]', 'ip1[23]', 'ip1[22]', 'ip1[21]', 'ip1[20]', 'ip1[19]', 'ip1[18]', 'ip1[17]', 'ip1[16]', 'ip1[15]', 'ip1[14]', 'ip1[13]', 'ip1[12]', 'ip1[11]', 'ip1[10]', 'ip1[9]', 'ip1[8]', 'ip1[7]', 'ip1[6]', 'ip1[5]'. 
+Warning: In design 'processor', input port 'Inst[31]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[30]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[29]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[28]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[27]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[26]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[25]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[24]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[23]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[22]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[21]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[20]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[19]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[18]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[17]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[16]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[15]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[14]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[13]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[12]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[11]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[5]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[4]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[3]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[2]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[1]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', input port 'Inst[0]' drives wired logic;
+(the port direction may have been specified incorrectly). (LINT-6)
+Warning: In design 'processor', three-state bus 'bcond' has non three-state driver 'alu_u0/C495/Z_0'. (LINT-34)
+Warning: In design 'processor', three-state bus '*Logic1*' has non three-state driver 'U1/**logic_1**'. (LINT-34)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[15]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[16]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[17]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[18]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[19]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[20]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[21]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[22]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[23]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[24]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[25]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[26]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[27]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[28]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[29]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[30]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[15]' is connected directly to output port 'op[31]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[14]' is connected directly to output port 'op[14]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[13]' is connected directly to output port 'op[13]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[12]' is connected directly to output port 'op[12]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[11]' is connected directly to output port 'op[11]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[10]' is connected directly to output port 'op[10]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[9]' is connected directly to output port 'op[9]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[8]' is connected directly to output port 'op[8]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[7]' is connected directly to output port 'op[7]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[6]' is connected directly to output port 'op[6]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[5]' is connected directly to output port 'op[5]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[4]' is connected directly to output port 'op[4]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[3]' is connected directly to output port 'op[3]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[2]' is connected directly to output port 'op[2]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[1]' is connected directly to output port 'op[1]'. (LINT-29)
+Warning: In design 'signext', input port 'ip[0]' is connected directly to output port 'op[0]'. (LINT-29)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[15]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[16]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[17]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[18]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[19]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[20]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[21]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[22]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[23]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[24]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[25]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[26]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[27]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[28]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[29]'. (LINT-31)
+Warning: In design 'signext', output port 'op[31]' is connected directly to output port 'op[30]'. (LINT-31)
+Warning: In design 'lshift', port 'ip[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'lshift', port 'ip[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'lshift', input port 'ip[29]' is connected directly to output port 'op[31]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[28]' is connected directly to output port 'op[30]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[27]' is connected directly to output port 'op[29]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[26]' is connected directly to output port 'op[28]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[25]' is connected directly to output port 'op[27]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[24]' is connected directly to output port 'op[26]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[23]' is connected directly to output port 'op[25]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[22]' is connected directly to output port 'op[24]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[21]' is connected directly to output port 'op[23]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[20]' is connected directly to output port 'op[22]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[19]' is connected directly to output port 'op[21]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[18]' is connected directly to output port 'op[20]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[17]' is connected directly to output port 'op[19]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[16]' is connected directly to output port 'op[18]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[15]' is connected directly to output port 'op[17]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[14]' is connected directly to output port 'op[16]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[13]' is connected directly to output port 'op[15]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[12]' is connected directly to output port 'op[14]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[11]' is connected directly to output port 'op[13]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[10]' is connected directly to output port 'op[12]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[9]' is connected directly to output port 'op[11]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[8]' is connected directly to output port 'op[10]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[7]' is connected directly to output port 'op[9]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[6]' is connected directly to output port 'op[8]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[5]' is connected directly to output port 'op[7]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[4]' is connected directly to output port 'op[6]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[3]' is connected directly to output port 'op[5]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[2]' is connected directly to output port 'op[4]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[1]' is connected directly to output port 'op[3]'. (LINT-29)
+Warning: In design 'lshift', input port 'ip[0]' is connected directly to output port 'op[2]'. (LINT-29)
+Warning: In design 'lshift', output port 'op[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'lshift', output port 'op[1]' is connected directly to output port 'op[0]'. (LINT-31)
+Warning: In design 'lshift', output port 'op[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'processor', net 'gpr_u0/*Logic1*' driven by pin 'gpr_u0/U3/**logic_1**' has no loads. (LINT-2)
+Warning: In design 'alu', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_14' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_15' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_16' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_19' does not drive any nets. (LINT-1)
+Information: Design 'processor' has multiply instantiated designs. Use the '-multiple_designs' switch for more information. (LINT-78)
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library       |      Version       | Available |
+============================================================================
+| Basic DW Building Blocks                | C-2009.06-DWBB_0912 |    *     |
+| Licensed DW Building Blocks             | C-2009.06-DWBB_0907 |    *     |
+============================================================================
+
+
+Information: There are 122 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition WCCOM25 set on design processor has different process,
+voltage and temperatures parameters than the parameters at which target library 
+tc240c is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'alu'
+  Processing 'mux_2x1_0'
+  Processing 'gpr'
+  Processing 'pc'
+  Processing 'lshift'
+  Processing 'signext'
+  Processing 'processor'
+Error: Width mismatch on port 'ALUSrc' of reference to 'control_unit' in 'processor'. (LINK-3)
+Warning: Unable to resolve reference 'control_unit' in 'processor'. (LINK-5)
+Information: Building the design 'mux_2x1' instantiated from design 'processor' with
+	the parameters "DATA_WIDTH=5". (HDL-193)
+Warning: Cannot find the design 'mux_2x1' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'mux_2x1' in 'processor'. (LINK-5)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clock' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clock' will be added to the clock's propagated skew. (TIM-112)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'alu_DW01_sub_0'
+  Mapping 'alu_DW_rightsh_0'
+  Mapping 'alu_DW_leftsh_0'
+  Processing 'alu_DW01_add_0'
+  Processing 'alu_DW01_cmp6_0'
+  Processing 'pc_DW01_add_0'
+  Processing 'pc_DW01_add_1'
+  Processing 'pc_DW01_add_2'
+Information: Input delay ('fall') on clock port 'clock' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clock' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clock' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clock' will be added to the clock's propagated skew. (TIM-112)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:08   17417.5      0.00       0.0       0.0                          
+    0:00:10   13473.5      0.86      64.2       0.0                          
+    0:00:10   13508.0      0.27      13.7       0.0                          
+    0:00:10   13486.5      0.24       7.8       0.0                          
+    0:00:10   13492.0      0.19       6.3       0.0                          
+    0:00:10   13505.5      0.11       5.7       0.0                          
+    0:00:11   13496.0      0.09       4.3       0.0                          
+    0:00:11   13497.0      0.05       1.4       0.0                          
+    0:00:11   13498.0      0.02       0.1       0.0                          
+    0:00:11   13497.5      0.00       0.0       0.0                          
+    0:00:11   13497.5      0.00       0.0       0.0                          
+    0:00:11   13497.5      0.00       0.0       0.0                          
+    0:00:11   13497.5      0.00       0.0       0.0                          
+    0:00:11   13497.5      0.00       0.0       0.0                          
+    0:00:11   13497.5      0.00       0.0       0.0                          
+    0:00:11   13497.5      0.00       0.0       0.0                          
+    0:00:11   13497.5      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:11   13497.5      0.00       0.0       0.0                          
+    0:00:11   13495.5      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 20000)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:11   13495.5      0.00       0.0       0.0                          
+    0:00:11   13495.5      0.00       0.0       0.0                          
+    0:00:11   13469.0      0.00       0.1       0.0                          
+    0:00:11   13455.0      0.00       0.1       0.0                          
+    0:00:11   13445.0      0.00       0.1       0.0                          
+    0:00:11   13438.0      0.00       0.1       0.0                          
+    0:00:11   13431.0      0.00       0.1       0.0                          
+    0:00:11   13431.0      0.00       0.1       0.0                          
+    0:00:11   13431.0      0.00       0.0       0.0                          
+    0:00:11   13411.0      0.10       4.2       0.0                          
+    0:00:11   13411.0      0.10       4.2       0.0                          
+    0:00:11   13411.0      0.10       4.2       0.0                          
+    0:00:11   13411.0      0.10       4.2       0.0                          
+    0:00:11   13411.0      0.10       4.2       0.0                          
+    0:00:11   13411.0      0.10       4.2       0.0                          
+    0:00:12   13416.0      0.00       0.0       0.0                          
+Loading db file '/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_WCCOM25'
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'processor' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'gpr_u0/clk': 1024 load(s), 1 driver(s)
+Error: Width mismatch on port 'ALUSrc' of reference to 'control_unit' in 'processor'. (LINK-3)
+Warning: Unable to resolve reference 'control_unit' in 'processor'. (LINK-5)
+Information: Building the design 'mux_2x1' instantiated from design 'processor' with
+	the parameters "DATA_WIDTH=5". (HDL-193)
+Warning: Cannot find the design 'mux_2x1' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'mux_2x1' in 'processor'. (LINK-5)
+Information: Updating design information... (UID-85)
+Warning: Design 'processor' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Input delay ('fall') on clock port 'clock' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clock' will be added to the clock's propagated skew. (TIM-112)
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+report_cell
+ 
+****************************************
+Report : cell
+Design : processor
+Version: C-2009.06-SP5
+Date   : Fri Mar 20 15:20:11 2015
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+alu_u0                    alu                             2028.500000
+                                                                    h, n
+br_lshift                 lshift                          0.000000  h
+control_unit_u0           control_unit                    0.000000  b
+gpr_u0                    gpr                             9955.500000
+                                                                    h, n
+mux_2x1_u0                mux_2x1                         0.000000  b, p
+mux_2x1_u1                mux_2x1                         0.000000  b, p
+mux_2x1_u2                mux_2x1_0                       81.000000 h, p
+mux_2x1_u3                mux_2x1_3                       111.000000
+                                                                    h, p
+mux_2x1_u4                mux_2x1                         0.000000  b, p
+mux_2x1_u5                mux_2x1_2                       81.000000 h, p
+mux_2x1_u6                mux_2x1_1                       81.000000 h, p
+pc_u0                     pc                              1078.000000
+                                                                    h, n
+signext_u0                signext                         0.000000  h
+--------------------------------------------------------------------------------
+Total 13 cells                                            13416.000000
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : net
+Design : processor
+Version: C-2009.06-SP5
+Date   : Fri Mar 20 15:20:11 2015
+****************************************
+
+
+Operating Conditions: WCCOM25   Library: tc240c
+Wire Load Model Mode: top
+
+
+Attributes:
+   dr - drc disabled
+    d - dont_touch
+    h - high fanout
+
+Net                 Fanout     Fanin      Load   Resistance    Pins   Attributes
+--------------------------------------------------------------------------------
+*Logic0*                27         1    203.17         0.00      28   dr
+ALUSrc                  34         1    265.63         0.00      34   
+ALU_Control[0]           3         1     27.06         0.00       3   
+ALU_Control[1]           7         1     53.97         0.00       7   
+ALU_Control[2]          11         1     88.06         0.00      11   
+ALU_Control[3]           3         1     26.41         0.00       3   
+ALU_datain2[0]           1         1     17.00         0.00       2   
+ALU_datain2[1]           1         1     17.00         0.00       2   
+ALU_datain2[2]           1         1     17.00         0.00       2   
+ALU_datain2[3]           1         1     17.00         0.00       2   
+ALU_datain2[4]           1         1     17.00         0.00       2   
+ALU_datain2[5]           1         1     17.00         0.00       2   
+ALU_datain2[6]           7         1     96.27         0.00       8   
+ALU_datain2[7]           8         1     96.78         0.00       9   
+ALU_datain2[8]           7         1     99.19         0.00       8   
+ALU_datain2[9]           8         1     96.44         0.00       9   
+ALU_datain2[10]          7         1     97.46         0.00       8   
+ALU_datain2[11]          8         1     97.95         0.00       9   
+ALU_datain2[12]          8         1     96.79         0.00       9   
+ALU_datain2[13]          7         1     97.70         0.00       8   
+ALU_datain2[14]          7         1     99.26         0.00       8   
+ALU_datain2[15]          8         1     99.50         0.00       9   
+ALU_datain2[16]          7         1     96.54         0.00       8   
+ALU_datain2[17]          8         1     96.49         0.00       9   
+ALU_datain2[18]          7         1     99.07         0.00       8   
+ALU_datain2[19]          8         1     99.20         0.00       9   
+ALU_datain2[20]          8         1    100.28         0.00       9   
+ALU_datain2[21]          7         1     95.51         0.00       8   
+ALU_datain2[22]          7         1     96.54         0.00       8   
+ALU_datain2[23]          8         1     96.69         0.00       9   
+ALU_datain2[24]          7         1     97.02         0.00       8   
+ALU_datain2[25]          8         1     97.97         0.00       9   
+ALU_datain2[26]          7         1     96.04         0.00       8   
+ALU_datain2[27]          8         1     98.81         0.00       9   
+ALU_datain2[28]          8         1    100.11         0.00       9   
+ALU_datain2[29]          7         1     96.56         0.00       8   
+ALU_datain2[30]          7         1     97.70         0.00       8   
+ALU_datain2[31]          8         1     99.06         0.00       9   
+ALU_datain2_src0[0]      1         1      6.74         0.00       2   
+ALU_datain2_src0[1]      1         1      6.74         0.00       2   
+ALU_datain2_src0[2]      1         1      6.74         0.00       2   
+ALU_datain2_src0[3]      1         1      6.74         0.00       2   
+ALU_datain2_src0[4]      1         1      6.74         0.00       2   
+ALU_datain2_src0[5]      1         1      6.74         0.00       2   
+ALU_datain2_src0[6]      1         1      6.74         0.00       2   
+ALU_datain2_src0[7]      1         1      6.74         0.00       2   
+ALU_datain2_src0[8]      1         1      6.74         0.00       2   
+ALU_datain2_src0[9]      1         1      6.74         0.00       2   
+ALU_datain2_src0[10]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[11]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[12]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[13]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[14]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[15]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[16]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[17]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[18]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[19]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[20]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[21]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[22]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[23]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[24]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[25]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[26]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[27]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[28]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[29]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[30]
+                         1         1      6.74         0.00       2   
+ALU_datain2_src0[31]
+                         1         1      6.74         0.00       2   
+Addr[0]                  2         1      6.74         0.00       3   
+Addr[1]                  2         1      6.74         0.00       3   
+Addr[2]                  2         1      6.74         0.00       3   
+Addr[3]                  2         1      6.74         0.00       3   
+Addr[4]                  2         1      6.74         0.00       3   
+Addr[5]                  2         1      6.74         0.00       3   
+Addr[6]                  2         1      6.74         0.00       3   
+Addr[7]                  2         1      6.74         0.00       3   
+Addr[8]                  2         1      6.74         0.00       3   
+Addr[9]                  2         1      6.74         0.00       3   
+Addr[10]                 2         1      6.74         0.00       3   
+Addr[11]                 2         1      6.74         0.00       3   
+Addr[12]                 2         1      6.74         0.00       3   
+Addr[13]                 2         1      6.74         0.00       3   
+Addr[14]                 2         1      6.74         0.00       3   
+Addr[15]                 2         1      6.74         0.00       3   
+Addr[16]                 2         1      6.74         0.00       3   
+Addr[17]                 2         1      6.74         0.00       3   
+Addr[18]                 2         1      6.74         0.00       3   
+Addr[19]                 2         1      6.74         0.00       3   
+Addr[20]                 2         1      6.74         0.00       3   
+Addr[21]                 2         1      6.74         0.00       3   
+Addr[22]                 2         1      6.74         0.00       3   
+Addr[23]                 2         1      6.74         0.00       3   
+Addr[24]                 2         1      6.74         0.00       3   
+Addr[25]                 2         1      6.74         0.00       3   
+Addr[26]                 2         1      6.74         0.00       3   
+Addr[27]                 2         1      6.74         0.00       3   
+Addr[28]                 2         1      6.74         0.00       3   
+Addr[29]                 2         1      6.74         0.00       3   
+Addr[30]                 2         1      6.74         0.00       3   
+Addr[31]                 2         1      6.74         0.00       3   
+Din[0]                   2         1      6.74         0.00       3   
+Din[1]                   2         1      6.74         0.00       3   
+Din[2]                   2         1      6.74         0.00       3   
+Din[3]                   2         1      6.74         0.00       3   
+Din[4]                   2         1      6.74         0.00       3   
+Din[5]                   2         1      6.74         0.00       3   
+Din[6]                   2         1      6.74         0.00       3   
+Din[7]                   2         1      6.74         0.00       3   
+Din[8]                   2         1      6.74         0.00       3   
+Din[9]                   2         1      6.74         0.00       3   
+Din[10]                  2         1      6.74         0.00       3   
+Din[11]                  2         1      6.74         0.00       3   
+Din[12]                  2         1      6.74         0.00       3   
+Din[13]                  2         1      6.74         0.00       3   
+Din[14]                  2         1      6.74         0.00       3   
+Din[15]                  2         1      6.74         0.00       3   
+Din[16]                  2         1      6.74         0.00       3   
+Din[17]                  2         1      6.74         0.00       3   
+Din[18]                  2         1      6.74         0.00       3   
+Din[19]                  2         1      6.74         0.00       3   
+Din[20]                  2         1      6.74         0.00       3   
+Din[21]                  2         1      6.74         0.00       3   
+Din[22]                  2         1      6.74         0.00       3   
+Din[23]                  2         1      6.74         0.00       3   
+Din[24]                  2         1      6.74         0.00       3   
+Din[25]                  2         1      6.74         0.00       3   
+Din[26]                  2         1      6.74         0.00       3   
+Din[27]                  2         1      6.74         0.00       3   
+Din[28]                  2         1      6.74         0.00       3   
+Din[29]                  2         1      6.74         0.00       3   
+Din[30]                  2         1      6.74         0.00       3   
+Din[31]                  2         1      6.74         0.00       3   
+Dout[0]                  1         1      7.51         0.00       2   
+Dout[1]                  1         1      7.51         0.00       2   
+Dout[2]                  1         1      7.51         0.00       2   
+Dout[3]                  1         1      7.51         0.00       2   
+Dout[4]                  1         1      7.51         0.00       2   
+Dout[5]                  1         1      7.51         0.00       2   
+Dout[6]                  1         1      7.51         0.00       2   
+Dout[7]                  1         1      7.51         0.00       2   
+Dout[8]                  1         1      7.51         0.00       2   
+Dout[9]                  1         1      7.78         0.00       2   
+Dout[10]                 1         1      7.51         0.00       2   
+Dout[11]                 1         1      7.51         0.00       2   
+Dout[12]                 1         1      7.51         0.00       2   
+Dout[13]                 1         1      7.51         0.00       2   
+Dout[14]                 1         1      7.51         0.00       2   
+Dout[15]                 1         1      7.51         0.00       2   
+Dout[16]                 1         1      7.51         0.00       2   
+Dout[17]                 1         1      7.51         0.00       2   
+Dout[18]                 1         1      7.51         0.00       2   
+Dout[19]                 1         1      7.51         0.00       2   
+Dout[20]                 1         1      7.51         0.00       2   
+Dout[21]                 1         1      7.51         0.00       2   
+Dout[22]                 1         1      7.51         0.00       2   
+Dout[23]                 1         1      7.51         0.00       2   
+Dout[24]                 1         1      7.51         0.00       2   
+Dout[25]                 1         1      7.51         0.00       2   
+Dout[26]                 1         1      7.51         0.00       2   
+Dout[27]                 1         1      7.51         0.00       2   
+Dout[28]                 1         1      7.51         0.00       2   
+Dout[29]                 1         1      7.51         0.00       2   
+Dout[30]                 1         1      7.51         0.00       2   
+Dout[31]                 1         1      7.51         0.00       2   
+Inst[0]                  5         2     24.64         0.00       6   
+Inst[1]                  5         2     35.86         0.00       6   
+Inst[2]                  5         2     34.21         0.00       6   
+Inst[3]                  5         2     34.21         0.00       6   
+Inst[4]                  5         2     34.21         0.00       6   
+Inst[5]                  5         2     34.21         0.00       6   
+Inst[6]                  5         1     41.72         0.00       6   
+Inst[7]                  5         1     35.91         0.00       6   
+Inst[8]                  5         1     41.72         0.00       6   
+Inst[9]                  5         1     36.17         0.00       6   
+Inst[10]                 5         1     41.72         0.00       6   
+Inst[11]                 5         2     34.21         0.00       6   
+Inst[12]                 5         2     28.40         0.00       6   
+Inst[13]                 5         2     28.40         0.00       6   
+Inst[14]                 5         2     34.21         0.00       6   
+Inst[15]                49         2    370.35         0.00      50   
+Inst[16]               293         3   4213.81         0.00     294   
+Inst[17]               100         3    776.18         0.00     101   
+Inst[18]               100         3    762.09         0.00     101   
+Inst[19]                68         3    787.36         0.00      69   
+Inst[20]                36         3    539.58         0.00      37   
+Inst[21]                 2         2      7.14         0.00       3   
+Inst[22]                 2         2      7.14         0.00       3   
+Inst[23]                 2         2      7.14         0.00       3   
+Inst[24]                 2         2      7.14         0.00       3   
+Inst[25]                 2         2      7.14         0.00       3   
+Inst[26]                 1         2      0.00         0.00       2   
+Inst[27]                 1         2      0.00         0.00       2   
+Inst[28]                 1         2      0.00         0.00       2   
+Inst[29]                 1         2      0.00         0.00       2   
+Inst[30]                 1         2      0.00         0.00       2   
+Inst[31]                 1         2      0.00         0.00       2   
+Inst_15_0_signext[0]
+                         5         2     24.64         0.00       6   
+Inst_15_0_signext[1]
+                         5         2     35.86         0.00       6   
+Inst_15_0_signext[2]
+                         5         2     34.21         0.00       6   
+Inst_15_0_signext[3]
+                         5         2     34.21         0.00       6   
+Inst_15_0_signext[4]
+                         5         2     34.21         0.00       6   
+Inst_15_0_signext[5]
+                         5         2     34.21         0.00       6   
+Inst_15_0_signext[6]
+                         5         1     41.72         0.00       6   
+Inst_15_0_signext[7]
+                         5         1     35.91         0.00       6   
+Inst_15_0_signext[8]
+                         5         1     41.72         0.00       6   
+Inst_15_0_signext[9]
+                         5         1     36.17         0.00       6   
+Inst_15_0_signext[10]
+                         5         1     41.72         0.00       6   
+Inst_15_0_signext[11]
+                         5         2     34.21         0.00       6   
+Inst_15_0_signext[12]
+                         5         2     28.40         0.00       6   
+Inst_15_0_signext[13]
+                         5         2     28.40         0.00       6   
+Inst_15_0_signext[14]
+                         5         2     34.21         0.00       6   
+Inst_15_0_signext[15]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[16]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[17]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[18]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[19]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[20]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[21]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[22]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[23]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[24]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[25]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[26]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[27]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[28]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[29]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[30]
+                        49         2    370.35         0.00      50   
+Inst_15_0_signext[31]
+                        49         2    370.35         0.00      50   
+MemRead                  2         1      0.00         0.00       2   
+MemWrite                 2         1      0.00         0.00       2   
+MemtoReg                34         1    265.63         0.00      34   
+PCSrc1                  29         1    238.93         0.00      29   
+PCSrc2                   3         1     26.38         0.00       3   
+PCSrc3                   3         1     23.77         0.00       3   
+PC[0]                    5         1     34.58         0.00       6   
+PC[1]                    5         1     34.58         0.00       6   
+PC[2]                    5         1     43.02         0.00       6   
+PC[3]                    6         1     49.19         0.00       7   
+PC[4]                    6         1     35.62         0.00       7   
+PC[5]                    6         1     34.36         0.00       7   
+PC[6]                    5         1     16.07         0.00       6   
+PC[7]                    5         1     29.28         0.00       6   
+PC[8]                    6         1     31.16         0.00       7   
+PC[9]                    6         1     43.12         0.00       7   
+PC[10]                   6         1     36.98         0.00       7   
+PC[11]                   6         1     41.69         0.00       7   
+PC[12]                   5         1     41.48         0.00       6   
+PC[13]                   5         1     39.93         0.00       6   
+PC[14]                   5         1     26.25         0.00       6   
+PC[15]                   5         1     26.38         0.00       6   
+PC[16]                   6         1     40.46         0.00       7   
+PC[17]                   5         1     41.48         0.00       6   
+PC[18]                   7         1     40.79         0.00       8   
+PC[19]                   5         1     26.43         0.00       6   
+PC[20]                   5         1     26.83         0.00       6   
+PC[21]                   6         1     29.22         0.00       7   
+PC[22]                   5         1     36.43         0.00       6   
+PC[23]                   5         1     41.39         0.00       6   
+PC[24]                   5         1     47.19         0.00       6   
+PC[25]                   4         1     44.72         0.00       5   
+PC[26]                   3         1     33.02         0.00       4   
+PC[27]                   3         1     33.02         0.00       4   
+PC[28]                   5         1     44.27         0.00       6   
+PC[29]                   4         1     44.72         0.00       5   
+PC[30]                   3         1     32.05         0.00       4   
+PC[31]                   3         1     36.71         0.00       4   
+RegDest                  2         2      0.00         0.00       2   
+RegWrite                 4         1     23.42         0.00       4   
+bcond                    1         2      0.00         0.00       2   
+br_signext_sl2[0]        2         1     19.55         0.00       3   dr
+br_signext_sl2[1]        2         1     19.55         0.00       3   dr
+br_signext_sl2[2]        5         2     24.64         0.00       6   
+br_signext_sl2[3]        5         2     35.86         0.00       6   
+br_signext_sl2[4]        5         2     34.21         0.00       6   
+br_signext_sl2[5]        5         2     34.21         0.00       6   
+br_signext_sl2[6]        5         2     34.21         0.00       6   
+br_signext_sl2[7]        5         2     34.21         0.00       6   
+br_signext_sl2[8]        5         1     41.72         0.00       6   
+br_signext_sl2[9]        5         1     35.91         0.00       6   
+br_signext_sl2[10]       5         1     41.72         0.00       6   
+br_signext_sl2[11]       5         1     36.17         0.00       6   
+br_signext_sl2[12]       5         1     41.72         0.00       6   
+br_signext_sl2[13]       5         2     34.21         0.00       6   
+br_signext_sl2[14]       5         2     28.40         0.00       6   
+br_signext_sl2[15]       5         2     28.40         0.00       6   
+br_signext_sl2[16]       5         2     34.21         0.00       6   
+br_signext_sl2[17]      49         2    370.35         0.00      50   
+br_signext_sl2[18]      49         2    370.35         0.00      50   
+br_signext_sl2[19]      49         2    370.35         0.00      50   
+br_signext_sl2[20]      49         2    370.35         0.00      50   
+br_signext_sl2[21]      49         2    370.35         0.00      50   
+br_signext_sl2[22]      49         2    370.35         0.00      50   
+br_signext_sl2[23]      49         2    370.35         0.00      50   
+br_signext_sl2[24]      49         2    370.35         0.00      50   
+br_signext_sl2[25]      49         2    370.35         0.00      50   
+br_signext_sl2[26]      49         2    370.35         0.00      50   
+br_signext_sl2[27]      49         2    370.35         0.00      50   
+br_signext_sl2[28]      49         2    370.35         0.00      50   
+br_signext_sl2[29]      49         2    370.35         0.00      50   
+br_signext_sl2[30]      49         2    370.35         0.00      50   
+br_signext_sl2[31]      49         2    370.35         0.00      50   
+clock                 1024         1   1001.00         0.00    1025   d, h
+gpr_rd_addr1[0]        291         1   4206.67         0.00     291   
+gpr_rd_addr1[1]         98         1    769.04         0.00      98   
+gpr_rd_addr1[2]         98         1    754.95         0.00      98   
+gpr_rd_addr1[3]         66         1    780.22         0.00      66   
+gpr_rd_addr1[4]         34         1    532.44         0.00      34   
+gpr_rd_data1[0]         13         1    137.87         0.00      14   
+gpr_rd_data1[1]         10         1    155.48         0.00      11   
+gpr_rd_data1[2]         10         1    148.23         0.00      11   
+gpr_rd_data1[3]          9         1    146.59         0.00      10   
+gpr_rd_data1[4]          9         1    147.38         0.00      10   
+gpr_rd_data1[5]         10         1    147.60         0.00      11   
+gpr_rd_data1[6]         10         1    148.55         0.00      11   
+gpr_rd_data1[7]         10         1    146.11         0.00      11   
+gpr_rd_data1[8]         10         1    148.55         0.00      11   
+gpr_rd_data1[9]          9         1    147.27         0.00      10   
+gpr_rd_data1[10]        10         1    147.81         0.00      11   
+gpr_rd_data1[11]         9         1    145.04         0.00      10   
+gpr_rd_data1[12]         9         1    145.04         0.00      10   
+gpr_rd_data1[13]        10         1    145.37         0.00      11   
+gpr_rd_data1[14]        10         1    146.32         0.00      11   
+gpr_rd_data1[15]        10         1    145.36         0.00      11   
+gpr_rd_data1[16]        10         1    146.32         0.00      11   
+gpr_rd_data1[17]         9         1    145.04         0.00      10   
+gpr_rd_data1[18]        10         1    146.79         0.00      11   
+gpr_rd_data1[19]         9         1    145.04         0.00      10   
+gpr_rd_data1[20]         9         1    145.04         0.00      10   
+gpr_rd_data1[21]        10         1    146.39         0.00      11   
+gpr_rd_data1[22]        10         1    148.55         0.00      11   
+gpr_rd_data1[23]        10         1    147.58         0.00      11   
+gpr_rd_data1[24]        10         1    148.55         0.00      11   
+gpr_rd_data1[25]         9         1    147.27         0.00      10   
+gpr_rd_data1[26]        10         1    149.02         0.00      11   
+gpr_rd_data1[27]         9         1    147.38         0.00      10   
+gpr_rd_data1[28]         9         1    147.27         0.00      10   
+gpr_rd_data1[29]        10         1    147.48         0.00      11   
+gpr_rd_data1[30]        10         1    148.55         0.00      11   
+gpr_rd_data1[31]         9         1    146.06         0.00      10   
+gpr_wr_addr0[0]          2         2      0.00         0.00       2   
+gpr_wr_addr0[1]          2         2      0.00         0.00       2   
+gpr_wr_addr0[2]          2         2      0.00         0.00       2   
+gpr_wr_addr0[3]          2         2      0.00         0.00       2   
+gpr_wr_addr0[4]          2         2      0.00         0.00       2   
+gpr_wr_addr[0]           7         1     53.34         0.00       7   
+gpr_wr_addr[1]           6         1     49.57         0.00       6   
+gpr_wr_addr[2]           6         1     49.91         0.00       6   
+gpr_wr_addr[3]           4         1     33.15         0.00       4   
+gpr_wr_addr[4]           3         1     27.14         0.00       3   
+gpr_wr_data[0]           1         1      7.18         0.00       2   
+gpr_wr_data[1]           1         1      7.18         0.00       2   
+gpr_wr_data[2]           1         1      7.18         0.00       2   
+gpr_wr_data[3]           1         1      7.18         0.00       2   
+gpr_wr_data[4]           1         1      7.18         0.00       2   
+gpr_wr_data[5]           1         1      7.18         0.00       2   
+gpr_wr_data[6]           1         1      7.18         0.00       2   
+gpr_wr_data[7]           1         1      7.18         0.00       2   
+gpr_wr_data[8]           1         1      7.18         0.00       2   
+gpr_wr_data[9]           1         1      7.18         0.00       2   
+gpr_wr_data[10]          1         1      7.18         0.00       2   
+gpr_wr_data[11]          1         1      7.18         0.00       2   
+gpr_wr_data[12]          1         1      7.18         0.00       2   
+gpr_wr_data[13]          1         1      7.18         0.00       2   
+gpr_wr_data[14]          1         1      7.18         0.00       2   
+gpr_wr_data[15]          1         1      7.18         0.00       2   
+gpr_wr_data[16]          1         1      7.18         0.00       2   
+gpr_wr_data[17]          1         1      7.18         0.00       2   
+gpr_wr_data[18]          1         1      7.18         0.00       2   
+gpr_wr_data[19]          1         1      7.18         0.00       2   
+gpr_wr_data[20]          1         1      7.18         0.00       2   
+gpr_wr_data[21]          1         1      7.18         0.00       2   
+gpr_wr_data[22]          1         1      7.18         0.00       2   
+gpr_wr_data[23]          1         1      7.18         0.00       2   
+gpr_wr_data[24]          1         1      7.18         0.00       2   
+gpr_wr_data[25]          1         1      7.18         0.00       2   
+gpr_wr_data[26]          1         1      7.18         0.00       2   
+gpr_wr_data[27]          1         1      7.18         0.00       2   
+gpr_wr_data[28]          1         1      7.18         0.00       2   
+gpr_wr_data[29]          1         1      7.18         0.00       2   
+gpr_wr_data[30]          1         1      7.24         0.00       2   
+gpr_wr_data[31]          2         1     14.71         0.00       3   
+isJAL                   35         2    438.69         0.00      35   
+isSLL_SRL               35         2    265.63         0.00      35   
+mem_alu_data_out[0]      1         1      6.74         0.00       2   
+mem_alu_data_out[1]      1         1      6.74         0.00       2   
+mem_alu_data_out[2]      1         1      6.74         0.00       2   
+mem_alu_data_out[3]      1         1      6.74         0.00       2   
+mem_alu_data_out[4]      1         1      6.74         0.00       2   
+mem_alu_data_out[5]      1         1      6.74         0.00       2   
+mem_alu_data_out[6]      1         1      6.74         0.00       2   
+mem_alu_data_out[7]      1         1      6.74         0.00       2   
+mem_alu_data_out[8]      1         1      6.74         0.00       2   
+mem_alu_data_out[9]      1         1      6.74         0.00       2   
+mem_alu_data_out[10]
+                         1         1      6.74         0.00       2   
+mem_alu_data_out[11]
+                         1         1      6.74         0.00       2   
+mem_alu_data_out[12]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[13]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[14]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[15]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[16]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[17]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[18]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[19]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[20]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[21]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[22]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[23]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[24]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[25]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[26]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[27]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[28]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[29]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[30]
+                         1         1     17.00         0.00       2   
+mem_alu_data_out[31]
+                         1         1     17.00         0.00       2   
+n1                       5         6      0.00         0.00       6   dr
+pc_plus_8[0]             5         1     34.58         0.00       6   
+pc_plus_8[1]             5         1     34.58         0.00       6   
+pc_plus_8[2]             5         1     43.02         0.00       6   
+pc_plus_8[3]             1         1      7.51         0.00       2   
+pc_plus_8[4]             1         1      7.51         0.00       2   
+pc_plus_8[5]             1         1      7.51         0.00       2   
+pc_plus_8[6]             1         1      7.51         0.00       2   
+pc_plus_8[7]             1         1      7.51         0.00       2   
+pc_plus_8[8]             1         1      7.51         0.00       2   
+pc_plus_8[9]             1         1      7.78         0.00       2   
+pc_plus_8[10]            1         1      7.51         0.00       2   
+pc_plus_8[11]            1         1      7.51         0.00       2   
+pc_plus_8[12]            1         1     17.00         0.00       2   
+pc_plus_8[13]            1         1     17.00         0.00       2   
+pc_plus_8[14]            1         1     17.00         0.00       2   
+pc_plus_8[15]            1         1     17.00         0.00       2   
+pc_plus_8[16]            1         1     17.00         0.00       2   
+pc_plus_8[17]            1         1     17.00         0.00       2   
+pc_plus_8[18]            1         1     17.00         0.00       2   
+pc_plus_8[19]            1         1     17.00         0.00       2   
+pc_plus_8[20]            1         1     17.00         0.00       2   
+pc_plus_8[21]            1         1     17.00         0.00       2   
+pc_plus_8[22]            1         1     17.00         0.00       2   
+pc_plus_8[23]            1         1     17.00         0.00       2   
+pc_plus_8[24]            1         1     17.00         0.00       2   
+pc_plus_8[25]            1         1     17.00         0.00       2   
+pc_plus_8[26]            1         1     17.00         0.00       2   
+pc_plus_8[27]            1         1     17.00         0.00       2   
+pc_plus_8[28]            1         1     17.00         0.00       2   
+pc_plus_8[29]            1         1     17.00         0.00       2   
+pc_plus_8[30]            1         1     17.00         0.00       2   
+pc_plus_8[31]            1         1     17.00         0.00       2   
+reset                    1         1     17.00         0.00       2   
+--------------------------------------------------------------------------------
+Total 451 nets        5321       549  41728.05         0.00    5742
+Maximum               1024         6   4213.81         0.00    1025
+Average              11.80      1.22     92.52         0.00   12.73
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+report_port
+ 
+****************************************
+Report : port
+Design : processor
+Version: C-2009.06-SP5
+Date   : Fri Mar 20 15:20:11 2015
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+Dout[0]        in      0.0000   0.0000   --      --      --         
+Dout[1]        in      0.0000   0.0000   --      --      --         
+Dout[2]        in      0.0000   0.0000   --      --      --         
+Dout[3]        in      0.0000   0.0000   --      --      --         
+Dout[4]        in      0.0000   0.0000   --      --      --         
+Dout[5]        in      0.0000   0.0000   --      --      --         
+Dout[6]        in      0.0000   0.0000   --      --      --         
+Dout[7]        in      0.0000   0.0000   --      --      --         
+Dout[8]        in      0.0000   0.0000   --      --      --         
+Dout[9]        in      0.0000   0.0000   --      --      --         
+Dout[10]       in      0.0000   0.0000   --      --      --         
+Dout[11]       in      0.0000   0.0000   --      --      --         
+Dout[12]       in      0.0000   0.0000   --      --      --         
+Dout[13]       in      0.0000   0.0000   --      --      --         
+Dout[14]       in      0.0000   0.0000   --      --      --         
+Dout[15]       in      0.0000   0.0000   --      --      --         
+Dout[16]       in      0.0000   0.0000   --      --      --         
+Dout[17]       in      0.0000   0.0000   --      --      --         
+Dout[18]       in      0.0000   0.0000   --      --      --         
+Dout[19]       in      0.0000   0.0000   --      --      --         
+Dout[20]       in      0.0000   0.0000   --      --      --         
+Dout[21]       in      0.0000   0.0000   --      --      --         
+Dout[22]       in      0.0000   0.0000   --      --      --         
+Dout[23]       in      0.0000   0.0000   --      --      --         
+Dout[24]       in      0.0000   0.0000   --      --      --         
+Dout[25]       in      0.0000   0.0000   --      --      --         
+Dout[26]       in      0.0000   0.0000   --      --      --         
+Dout[27]       in      0.0000   0.0000   --      --      --         
+Dout[28]       in      0.0000   0.0000   --      --      --         
+Dout[29]       in      0.0000   0.0000   --      --      --         
+Dout[30]       in      0.0000   0.0000   --      --      --         
+Dout[31]       in      0.0000   0.0000   --      --      --         
+Inst[0]        in      0.0000   0.0000   --      --      --         
+Inst[1]        in      0.0000   0.0000   --      --      --         
+Inst[2]        in      0.0000   0.0000   --      --      --         
+Inst[3]        in      0.0000   0.0000   --      --      --         
+Inst[4]        in      0.0000   0.0000   --      --      --         
+Inst[5]        in      0.0000   0.0000   --      --      --         
+Inst[6]        in      0.0000   0.0000   --      --      --         
+Inst[7]        in      0.0000   0.0000   --      --      --         
+Inst[8]        in      0.0000   0.0000   --      --      --         
+Inst[9]        in      0.0000   0.0000   --      --      --         
+Inst[10]       in      0.0000   0.0000   --      --      --         
+Inst[11]       in      0.0000   0.0000   --      --      --         
+Inst[12]       in      0.0000   0.0000   --      --      --         
+Inst[13]       in      0.0000   0.0000   --      --      --         
+Inst[14]       in      0.0000   0.0000   --      --      --         
+Inst[15]       in      0.0000   0.0000   --      --      --         
+Inst[16]       in      0.0000   0.0000   --      --      --         
+Inst[17]       in      0.0000   0.0000   --      --      --         
+Inst[18]       in      0.0000   0.0000   --      --      --         
+Inst[19]       in      0.0000   0.0000   --      --      --         
+Inst[20]       in      0.0000   0.0000   --      --      --         
+Inst[21]       in      0.0000   0.0000   --      --      --         
+Inst[22]       in      0.0000   0.0000   --      --      --         
+Inst[23]       in      0.0000   0.0000   --      --      --         
+Inst[24]       in      0.0000   0.0000   --      --      --         
+Inst[25]       in      0.0000   0.0000   --      --      --         
+Inst[26]       in      0.0000   0.0000   --      --      --         
+Inst[27]       in      0.0000   0.0000   --      --      --         
+Inst[28]       in      0.0000   0.0000   --      --      --         
+Inst[29]       in      0.0000   0.0000   --      --      --         
+Inst[30]       in      0.0000   0.0000   --      --      --         
+Inst[31]       in      0.0000   0.0000   --      --      --         
+clock          in      0.0000   0.0000   --      --      --         d
+reset          in      0.0000   0.0000   --      --      --         
+Addr[0]        out     0.0000   0.0000   --      --      --         
+Addr[1]        out     0.0000   0.0000   --      --      --         
+Addr[2]        out     0.0000   0.0000   --      --      --         
+Addr[3]        out     0.0000   0.0000   --      --      --         
+Addr[4]        out     0.0000   0.0000   --      --      --         
+Addr[5]        out     0.0000   0.0000   --      --      --         
+Addr[6]        out     0.0000   0.0000   --      --      --         
+Addr[7]        out     0.0000   0.0000   --      --      --         
+Addr[8]        out     0.0000   0.0000   --      --      --         
+Addr[9]        out     0.0000   0.0000   --      --      --         
+Addr[10]       out     0.0000   0.0000   --      --      --         
+Addr[11]       out     0.0000   0.0000   --      --      --         
+Addr[12]       out     0.0000   0.0000   --      --      --         
+Addr[13]       out     0.0000   0.0000   --      --      --         
+Addr[14]       out     0.0000   0.0000   --      --      --         
+Addr[15]       out     0.0000   0.0000   --      --      --         
+Addr[16]       out     0.0000   0.0000   --      --      --         
+Addr[17]       out     0.0000   0.0000   --      --      --         
+Addr[18]       out     0.0000   0.0000   --      --      --         
+Addr[19]       out     0.0000   0.0000   --      --      --         
+Addr[20]       out     0.0000   0.0000   --      --      --         
+Addr[21]       out     0.0000   0.0000   --      --      --         
+Addr[22]       out     0.0000   0.0000   --      --      --         
+Addr[23]       out     0.0000   0.0000   --      --      --         
+Addr[24]       out     0.0000   0.0000   --      --      --         
+Addr[25]       out     0.0000   0.0000   --      --      --         
+Addr[26]       out     0.0000   0.0000   --      --      --         
+Addr[27]       out     0.0000   0.0000   --      --      --         
+Addr[28]       out     0.0000   0.0000   --      --      --         
+Addr[29]       out     0.0000   0.0000   --      --      --         
+Addr[30]       out     0.0000   0.0000   --      --      --         
+Addr[31]       out     0.0000   0.0000   --      --      --         
+Din[0]         out     0.0000   0.0000   --      --      --         
+Din[1]         out     0.0000   0.0000   --      --      --         
+Din[2]         out     0.0000   0.0000   --      --      --         
+Din[3]         out     0.0000   0.0000   --      --      --         
+Din[4]         out     0.0000   0.0000   --      --      --         
+Din[5]         out     0.0000   0.0000   --      --      --         
+Din[6]         out     0.0000   0.0000   --      --      --         
+Din[7]         out     0.0000   0.0000   --      --      --         
+Din[8]         out     0.0000   0.0000   --      --      --         
+Din[9]         out     0.0000   0.0000   --      --      --         
+Din[10]        out     0.0000   0.0000   --      --      --         
+Din[11]        out     0.0000   0.0000   --      --      --         
+Din[12]        out     0.0000   0.0000   --      --      --         
+Din[13]        out     0.0000   0.0000   --      --      --         
+Din[14]        out     0.0000   0.0000   --      --      --         
+Din[15]        out     0.0000   0.0000   --      --      --         
+Din[16]        out     0.0000   0.0000   --      --      --         
+Din[17]        out     0.0000   0.0000   --      --      --         
+Din[18]        out     0.0000   0.0000   --      --      --         
+Din[19]        out     0.0000   0.0000   --      --      --         
+Din[20]        out     0.0000   0.0000   --      --      --         
+Din[21]        out     0.0000   0.0000   --      --      --         
+Din[22]        out     0.0000   0.0000   --      --      --         
+Din[23]        out     0.0000   0.0000   --      --      --         
+Din[24]        out     0.0000   0.0000   --      --      --         
+Din[25]        out     0.0000   0.0000   --      --      --         
+Din[26]        out     0.0000   0.0000   --      --      --         
+Din[27]        out     0.0000   0.0000   --      --      --         
+Din[28]        out     0.0000   0.0000   --      --      --         
+Din[29]        out     0.0000   0.0000   --      --      --         
+Din[30]        out     0.0000   0.0000   --      --      --         
+Din[31]        out     0.0000   0.0000   --      --      --         
+MemRead        out     0.0000   0.0000   --      --      --         
+MemWrite       out     0.0000   0.0000   --      --      --         
+PC[0]          out     0.0000   0.0000   --      --      --         
+PC[1]          out     0.0000   0.0000   --      --      --         
+PC[2]          out     0.0000   0.0000   --      --      --         
+PC[3]          out     0.0000   0.0000   --      --      --         
+PC[4]          out     0.0000   0.0000   --      --      --         
+PC[5]          out     0.0000   0.0000   --      --      --         
+PC[6]          out     0.0000   0.0000   --      --      --         
+PC[7]          out     0.0000   0.0000   --      --      --         
+PC[8]          out     0.0000   0.0000   --      --      --         
+PC[9]          out     0.0000   0.0000   --      --      --         
+PC[10]         out     0.0000   0.0000   --      --      --         
+PC[11]         out     0.0000   0.0000   --      --      --         
+PC[12]         out     0.0000   0.0000   --      --      --         
+PC[13]         out     0.0000   0.0000   --      --      --         
+PC[14]         out     0.0000   0.0000   --      --      --         
+PC[15]         out     0.0000   0.0000   --      --      --         
+PC[16]         out     0.0000   0.0000   --      --      --         
+PC[17]         out     0.0000   0.0000   --      --      --         
+PC[18]         out     0.0000   0.0000   --      --      --         
+PC[19]         out     0.0000   0.0000   --      --      --         
+PC[20]         out     0.0000   0.0000   --      --      --         
+PC[21]         out     0.0000   0.0000   --      --      --         
+PC[22]         out     0.0000   0.0000   --      --      --         
+PC[23]         out     0.0000   0.0000   --      --      --         
+PC[24]         out     0.0000   0.0000   --      --      --         
+PC[25]         out     0.0000   0.0000   --      --      --         
+PC[26]         out     0.0000   0.0000   --      --      --         
+PC[27]         out     0.0000   0.0000   --      --      --         
+PC[28]         out     0.0000   0.0000   --      --      --         
+PC[29]         out     0.0000   0.0000   --      --      --         
+PC[30]         out     0.0000   0.0000   --      --      --         
+PC[31]         out     0.0000   0.0000   --      --      --         
+
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : processor
+Version: C-2009.06-SP5
+Date   : Fri Mar 20 15:20:11 2015
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM25   Library: tc240c
+Wire Load Model Mode: top
+
+  Startpoint: pc_u0/pc_val_reg[4]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: gpr_u0/gpr_reg[1][31]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  pc_u0/pc_val_reg[4]/CP (CFD2QXL)                        0.00 #     0.00 r
+  pc_u0/pc_val_reg[4]/Q (CFD2QXL)                         0.83       0.83 r
+  pc_u0/add_28/A[4] (pc_DW01_add_6)                       0.00       0.83 r
+  pc_u0/add_28/U142/Z (CND2X1)                            0.22       1.05 f
+  pc_u0/add_28/U133/Z (CNR2X1)                            0.17       1.23 r
+  pc_u0/add_28/U162/Z (CND2X1)                            0.14       1.37 f
+  pc_u0/add_28/U143/Z (CNR2X1)                            0.14       1.51 r
+  pc_u0/add_28/U137/Z (CAN2X1)                            0.22       1.73 r
+  pc_u0/add_28/U7/CO (CHA1X1)                             0.24       1.96 r
+  pc_u0/add_28/U6/CO (CHA1X1)                             0.24       2.20 r
+  pc_u0/add_28/U5/CO (CHA1X1)                             0.24       2.44 r
+  pc_u0/add_28/U4/CO (CHA1X1)                             0.24       2.67 r
+  pc_u0/add_28/U3/CO (CHA1X1)                             0.24       2.91 r
+  pc_u0/add_28/U134/CO (CHA1X1)                           0.24       3.15 r
+  pc_u0/add_28/U132/Z (CEOX1)                             0.33       3.48 r
+  pc_u0/add_28/SUM[31] (pc_DW01_add_6)                    0.00       3.48 r
+  pc_u0/pc_plus_8[31] (pc)                                0.00       3.48 r
+  mux_2x1_u3/ip1[31] (mux_2x1_3)                          0.00       3.48 r
+  mux_2x1_u3/U72/Z (CIVX2)                                0.09       3.57 f
+  mux_2x1_u3/U73/Z (CMXI2X1)                              0.22       3.79 r
+  mux_2x1_u3/out[31] (mux_2x1_3)                          0.00       3.79 r
+  gpr_u0/wr_data[31] (gpr)                                0.00       3.79 r
+  gpr_u0/U4/Z (CNIVX2)                                    0.33       4.12 r
+  gpr_u0/U2040/Z (CMX2X1)                                 0.25       4.37 r
+  gpr_u0/gpr_reg[1][31]/D (CFD1QXL)                       0.00       4.37 r
+  data arrival time                                                  4.37
+
+  clock clock (rise edge)                                 5.00       5.00
+  clock network delay (propagated)                        0.00       5.00
+  clock uncertainty                                      -0.25       4.75
+  gpr_u0/gpr_reg[1][31]/CP (CFD1QXL)                      0.00       4.75 r
+  library setup time                                     -0.38       4.37
+  data required time                                                 4.37
+  --------------------------------------------------------------------------
+  data required time                                                 4.37
+  data arrival time                                                 -4.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+Loading db file '/apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_WCCOM25'
+Warning: Main library 'tc240c' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black-box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : processor
+Version: C-2009.06-SP5
+Date   : Fri Mar 20 15:20:12 2015
+****************************************
+
+
+Library(s) Used:
+
+    tc240c (File: /apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_WCCOM25)
+
+
+Operating Conditions: WCCOM25   Library: tc240c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 2.3  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = Unitless
+
+
+  Cell Internal Power  =  42.3973 mW   (90%)
+  Net Switching Power  =   4.8014 mW   (10%)
+                         ---------
+Total Dynamic Power    =  47.1987 mW  (100%)
+
+Cell Leakage Power     =   0.0000 
+
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : processor
+Version: C-2009.06-SP5
+Date   : Fri Mar 20 15:20:12 2015
+****************************************
+
+Library(s) Used:
+
+    tc240c (File: /apps/toshiba/sjsu/synopsys/tc240c/tc240c.db_WCCOM25)
+
+Number of ports:              164
+Number of nets:               451
+Number of cells:               13
+Number of references:          11
+
+Combinational area:       9702.000000
+Noncombinational area:    3714.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          13416.000000
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Writing verilog file '/home/ra/raje9978/ee275/sc_mips/mips_1cycle.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 2 nets to module processor using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
