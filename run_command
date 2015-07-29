@@ -1,0 +1,1 @@
+irun +access+r processor.v control_unit.v pc.v alu.v signext.v lshift.v adder.v gpr.v mux_2x1.v test.v -gui &
